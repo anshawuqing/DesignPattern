@@ -25,4 +25,20 @@ public class main : MonoBehaviour {
 	void Update () {
 		
 	}
+
+   /// <summary>
+   ///工厂模式  客户端实现代码
+   /// </summary>
+   void Factory_main()
+    {
+        /// 实现接口
+        IFactory OperaFatory = new AddFactory();  // 客户端 根据需要  选择相应的工厂
+        Operation opera = OperaFatory.CreateOperation();
+        opera.NumberA = 1;
+        opera.NumberB = 2;
+        double result = opera.GetResult();  // 计算出结果
+
+    }
+
+   
 }
