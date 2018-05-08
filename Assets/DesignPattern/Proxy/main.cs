@@ -73,5 +73,25 @@ public class main : MonoBehaviour {
         p1.Show(); // 进行  显示商品
        
     }
-   
+
+
+    /// <summary>
+    /// 观察者模式的 客户端代码
+    /// </summary>
+    void Observer_main()
+    { 
+        ///声明一个新的主题对象
+        ConcreteSubject s = new ConcreteSubject();
+        
+        // 为主题对象  增加观察者
+        s.Attach(new ConcreteObserver(s, "X"));
+        s.Attach(new ConcreteObserver(s, "Y"));
+        s.Attach(new ConcreteObserver(s, "Z"));
+
+        ///更新主题的 状态
+        s.SubjectState = "ABC";
+        s.Notify();
+
+        Debug.Log("通知成功");
+      } 
 }
