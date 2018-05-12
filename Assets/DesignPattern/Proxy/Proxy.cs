@@ -16,17 +16,9 @@ using UnityEngine;
     /// 保存新的真实实体，使代理可以访问 实体
     /// </summary>
     RealSubject realsuibject;
-     
-    public override void Request()
-    {   //如果为空就  创建一个新的实体
-        if (realsuibject  == null)
-        {
-            realsuibject = new RealSubject();
-          
-        }
-        realsuibject.Request();
 
-    }
+    
+    
 
 
     // Use this for initialization
