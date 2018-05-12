@@ -7,8 +7,7 @@ using UnityEngine;
 /// <summary>
 /// 定义 Proxy 类（接口文件类）所代表的真实实体
 /// </summary>
-    class RealSubject : ProxySubject
-{
+    class RealSubject :  Subject  {
 
     public override void Request()
     {
