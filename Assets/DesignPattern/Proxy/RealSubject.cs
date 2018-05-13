@@ -9,7 +9,4 @@ using UnityEngine;
 /// </summary>
     class RealSubject :  Subject  {
 
-    public override void Request()
-    {
-        Debug.Log("实现具体的对象"); 
-    } }
+     }

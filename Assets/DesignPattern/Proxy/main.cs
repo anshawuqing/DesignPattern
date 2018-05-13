@@ -18,7 +18,7 @@ public class main : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         RealSubject thenew = new RealSubject();
-        thenew.Request();   ///通过代理模式  将 
+  
 	}
 	
 	// Update is called once per frame
