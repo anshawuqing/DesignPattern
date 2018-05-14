@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,8 +9,7 @@ using UnityEngine;
 /// 代理类  为其 保存一个引用使得 代理可以访问实体，
 /// 并提供一个与 接口类相同的 接口，这样代理就可以用来替代  实体
 /// </summary>
-class Proxy : ProxySubject
-{
+ class Proxy : Subject {
 
 
     /// <summary>
@@ -19,17 +17,8 @@ class Proxy : ProxySubject
     /// </summary>
     RealSubject realsuibject;
 
-    public override void Request()
-    {
-        if (realsuibject == null)
-        {
-            realsuibject = new RealSubject();
-
-        }
-        realsuibject.Request();
-    }
-
-  
+    
+    
 
 
     // Use this for initialization
